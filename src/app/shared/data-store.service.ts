@@ -13,7 +13,6 @@ export class DataStoreService {
   storeRecipes() {
     const recipes = this.recipeService.getRecipes();
     this.http.put(this.fireBaseUrl, recipes).subscribe((response) => {
-      console.log(response);
     });
   }
 
